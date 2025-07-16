@@ -21,6 +21,9 @@ https://teamtreehouse.com/library/walkthrough-for-project-2-data-pagination-and-
 ---Workshop:
 https://teamtreehouse.com/library/javascript-search
 
+---Instructions:
+https://teamtreehouse.com/projects/data-pagination-and-filtering#instructions
+
 --Project Instructions--
 
 4 Steps:
@@ -107,3 +110,36 @@ Final stage of the project is the most important. This is where developer skills
 
 *** Pro Tip
   Before submitting your project, it's always a good idea to get an additional pair of eyes on it. This will avoid your project from being returned to you if you missed one of the requirements. You can share a link to your GitHub repository in the #review-my-project channel on Slack and a fellow student or staff member will happily have a look at it.
+
+*** Extra Credit
+  To get an "Exceeds" rating, complete all of the steps below.
+
+  1. Add a search component
+
+  Dynamically create and add a search bar. Avoid making any changes in the index.html file and instead use your js skills for this. See sample elements below. If you follow the example below, the provided CSS will style the elements for you.
+
+  <label for="search" class="student-search">
+    <span>Search by Name</span>
+    <input id="search" placeholder="Search by name...">
+    <button type="button"> <img src ="img/icn-search.svg" alt="Search Icon"></button>
+  </label>
+
+  2. Add search functionality
+  
+  When the search is performed, the student data is filtered so that only students whose name includes the search value are shown. The search should be be case-insensitive and work for partial matches. 
+
+  To improve the functionality and user experience, consider adding a keyup event listener (would personally prefer input in case of pasting) to the search input so that the list filters in real-time as the user types. Should be in addition to clicking search button
+
+  ** Pro Tip
+    Already created the function to show 9 students. Call that by submitting the searched list as array argument
+
+  3. Add Pagination for Search Results
+
+  Pagination buttons should change based on the number of matches to the search. Clicking a pagination button should display the corresponding matches
+
+  ** Pro Tip
+    Already created pagination function. Feed that.
+
+  4. Handle No Search matches
+
+  If no matches are found, display a "No Results Found..." type message on the page. ***DON'T*** use alert()
