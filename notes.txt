@@ -1,0 +1,109 @@
+---Before Start
+
+[X] - Complete U2 Curriculum
+[X] - Create GitHub Repo
+[X] - Download Project Files
+[X] - Review Your Resources
+[X] - Carefully Read Project Instructions
+
+--Resources--
+
+---Study Guide
+Project 2 Study Guide:
+https://teamtreehouse.com/library/study-guide-for-project-2-data-pagination-and-filtering
+
+---Project Warm Ups:
+https://teamtreehouse.com/library/warm-ups-data-pagination-and-filtering
+
+---Walkthrough:
+https://teamtreehouse.com/library/walkthrough-for-project-2-data-pagination-and-filtering
+
+---Workshop:
+https://teamtreehouse.com/library/javascript-search
+
+--Project Instructions--
+
+4 Steps:
+
+1. Getting Started with Project Files
+* Open the project in VS Code open the script.js file, load the index.html file in Brave (Go Live) and open the DevTools Console
+
+*If you have trouble, reach out on Slack
+
+2. The showPage Function
+
+Will be responsible for rendering the student cards to page. Depending on which page is requested by the user, the corresponding students from a given array will be shown on the page
+
+  a. Create a new function called showPage and give it two parameters
+    * A list paramter to represent an array of student objects
+    * A page parameter to represent the requested page number
+
+  b. In the body of the function:
+    * Create two variables to store the start index and end index of the list items to be displayed on the given page. To make it dynamic, use the page parameter and some basic math to calculate the value of these variables like so
+      ** Start Index = (page * items per page) - items per page
+      ** End Index = page * items per page
+
+    * Select the ul element with a class of student-list and assign its value to a variables
+
+    * Use the innerHTML property to set the HTML content of the student-list variable you just created to an empty string. This will remove any students that might have previously been displayed
+
+    * Loop over the list of students
+
+    * Inside the loop:
+      ** Write a conditional statement that checks if the current index (i) is greater than or equal to the start index variable and less than the end index variable
+      ** Inside that conditional
+        *** Create the DOM Elements needed to display the information for each matching student as you iterate over the list parameter. You can find an example of what the final version of these elements should look in the project's instruction page.
+        *** Insert the elements you created into the student-list variable you created earlier. The insertAdjacentHTML method and beforeend option work well for This
+*** Pro Tip
+  Because you will need to create multiple elements to display the information for each student, you might consider using a template literal
+
+3. The addPagination Function
+
+Will be responsible for rendering the pagination buttons to the page. When clicking one of these buttons, the showPage function will be called to update the student cards to match the requested page
+
+  a. Create a new function called addPagination
+
+  b. Add a list parameter to represent the array of student objects
+
+  c. In the body of the function:
+    * Create a variable to store the number of pagination buttons needed. You can calculate this using the length of the list. Remember, you will want to display 9 students per page
+
+    * Select the ul element with a class of link-list and store it in a variable
+
+    * Use the innerHTML property to set the HTML contentof the link-list variable to an empty string. This will remove any pagination buttons that may habe previously been displayed
+
+    * Loop over the variable that contains the number of pages
+
+    * Inside the loop:
+      ** Create a new button element for each of the pages. See example in instructions page
+      ** Append these elements to the .link-list element. The insertAdjacentHTML method and beforeend option work well for this
+
+    * Select the first pagination button and give it a class name of active
+
+    * Create an event listener to listen for clicks on the .link-list element
+
+    * Inside the event listener:
+      ** Create a conditional that checks if the clicked element is a button. This will ensure that the function will only be called if one of the buttons is clicked. If the conditional evaluates to be true:
+        *** Remove the active css from any other pagination button
+        *** Add the active class to the button that was just clicked
+        *** Call the showPage function and pass it the list and page number to display
+
+4. Finishing the Project
+
+Final stage of the project is the most important. This is where developer skills really shine as you carefully double-check that you've accomplished all requirements and that your project is ready for submission.
+
+  a. Code Comments
+    - It is a best practice for development code to be well commented. Replace provided comments with your own to briefly describe your code
+
+  b. Code Readability
+    - Readability is second only to functionality. Double-check your code to ensure spacing and indentation are consistent
+
+  c. Quality Assurance Testing
+    - This is the keystone step in the development process
+
+    * Open and run your Append
+    * Open the DevTools
+    * Pretend to be a user and test all aspects of functionality and every possible state of the app while monitoring the console for bugs and resolving any that arise.
+
+*** Pro Tip
+  Before submitting your project, it's always a good idea to get an additional pair of eyes on it. This will avoid your project from being returned to you if you missed one of the requirements. You can share a link to your GitHub repository in the #review-my-project channel on Slack and a fellow student or staff member will happily have a look at it.
