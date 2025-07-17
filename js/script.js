@@ -113,6 +113,44 @@ label.appendChild(input)
 label.appendChild(button)
 title.insertAdjacentElement('afterend', label)
 
+//find search and search button
+const searchInput = document.getElementById('search')
+const searchButton = document.querySelector('button')
+
+//helper function to filter data via search
+const filterStudents = (searchText, list) => {
+  const lowerCaseText = searchText.toLowerCase()
+  const results = []
+
+  for (let i = 0; i < list.length; i++) {
+    const student = list[i]
+    const fullName = `${student.name.first} ${student.name.last}`.toLowerCase()
+
+    if (fullName.includes(lowerCaseText)) {
+      results.push(student)
+    }
+  }
+
+  return results
+}
+
+//helper function to perform search on keyup or search click
+const performSearch = () => {
+  const searchText = searchInput.value
+  const results = filterStudents(searchText, data)
+
+  if (results.length > 0) {
+    showPage(results, 1)
+    addPagination(results)
+  } else {
+    studentList.innerHTML = `<li><h3>No results found...</h3></li>`
+  }
+}
+
+//event listener for keyup
+
+//event listener for search button click
+
 // Call functions
 showPage(data, 1)
 addPagination(data)

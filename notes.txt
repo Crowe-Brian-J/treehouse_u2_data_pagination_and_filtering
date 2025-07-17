@@ -114,7 +114,7 @@ Final stage of the project is the most important. This is where developer skills
 *** Extra Credit
   To get an "Exceeds" rating, complete all of the steps below.
 
-  [ ] 1. Add a search component
+  [X] 1. Add a search component
 
   Dynamically create and add a search bar. Avoid making any changes in the index.html file and instead use your js skills for this. See sample elements below. If you follow the example below, the provided CSS will style the elements for you.
 
