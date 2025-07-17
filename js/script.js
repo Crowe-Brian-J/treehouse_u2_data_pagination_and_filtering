@@ -72,13 +72,13 @@ const addPagination = (list) => {
     //look for clicked button
     const buttonClicked = e.target.closest('button')
 
-    //if there is an active button and a button is clicked:
+    //if there is an active button (always because it's set) and a button is clicked:
     if (activeButton && buttonClicked) {
       //remove active from the active button
       activeButton.classList.remove('active')
     }
 
-    //add active to new button, if clicked
+    //if a new button is clicked, add active class
     if (buttonClicked) {
       buttonClicked.classList.add('active')
       let newPage = Number(buttonClicked.innerHTML)
@@ -86,6 +86,32 @@ const addPagination = (list) => {
     }
   })
 }
+
+//add search button based on instructions page directions
+//find the header
+const header = document.querySelector('header')
+const title = document.querySelector('h2')
+
+const label = document.createElement('label')
+label.setAttribute('for', 'search')
+label.className = 'student-search'
+
+const span = document.createElement('span')
+span.textContent = 'Search by Name'
+
+const input = document.createElement('input')
+input.id = 'search'
+input.placeholder = 'Search by name...'
+
+const button = document.createElement('button')
+button.type = 'button'
+button.innerHTML = "<img src='img/icn-search.svg' alt='Search Icon'>"
+
+//append what's been created
+label.appendChild(span)
+label.appendChild(input)
+label.appendChild(button)
+title.insertAdjacentElement('afterend', label)
 
 // Call functions
 showPage(data, 1)

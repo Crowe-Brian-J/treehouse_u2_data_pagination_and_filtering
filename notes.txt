@@ -68,7 +68,7 @@ Will be responsible for rendering the pagination buttons to the page. When click
 
   [X] b. Add a list parameter to represent the array of student objects
 
-  [ ] c. In the body of the function:
+  [X] c. In the body of the function:
     [X] * Create a variable to store the number of pagination buttons needed. You can calculate this using the length of the list. Remember, you will want to display 9 students per page
 
     [X] * Select the ul element with a class of link-list and store it in a variable
@@ -91,7 +91,7 @@ Will be responsible for rendering the pagination buttons to the page. When click
         [X] *** Add the active class to the button that was just clicked
         [X] *** Call the showPage function and pass it the list and page number to display
 
-[ ] 4. Finishing the Project
+[X] 4. Finishing the Project
 
 Final stage of the project is the most important. This is where developer skills really shine as you carefully double-check that you've accomplished all requirements and that your project is ready for submission.
 
@@ -101,12 +101,12 @@ Final stage of the project is the most important. This is where developer skills
   [X] b. Code Readability
     - Readability is second only to functionality. Double-check your code to ensure spacing and indentation are consistent
 
-  [ ] c. Quality Assurance Testing
+  [X] c. Quality Assurance Testing
     - This is the keystone step in the development process
 
-    [ ] * Open and run your app
-    [ ] * Open the DevTools
-    [ ] * Pretend to be a user and test all aspects of functionality and every possible state of the app while monitoring the console for bugs and resolving any that arise.
+    [X] * Open and run your app
+    [X] * Open the DevTools
+    [X] * Pretend to be a user and test all aspects of functionality and every possible state of the app while monitoring the console for bugs and resolving any that arise.
 
 *** Pro Tip
   Before submitting your project, it's always a good idea to get an additional pair of eyes on it. This will avoid your project from being returned to you if you missed one of the requirements. You can share a link to your GitHub repository in the #review-my-project channel on Slack and a fellow student or staff member will happily have a look at it.
