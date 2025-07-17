@@ -153,6 +153,9 @@ searchInput.addEventListener('keyup', () => {
 })
 
 //event listener for search button click
+searchButton.addEventListener('submit', () => {
+  performSearch()
+})
 
 // Call functions
 showPage(data, 1)
