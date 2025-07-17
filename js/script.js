@@ -148,6 +148,9 @@ const performSearch = () => {
 }
 
 //event listener for keyup
+searchInput.addEventListener('keyup', () => {
+  performSearch()
+})
 
 //event listener for search button click
 
