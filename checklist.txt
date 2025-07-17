@@ -31,7 +31,7 @@ Pagination buttons        |* Incorrect number or num-|* Pagination buttons dis- 
                           |                          |event.                    |tion buttons are displayed|
                           |* Clicking between or     |                          |; if 22 search results are|
                           |outside of pagination but-|* The active class is     |returned, 3 pagination    |
-                          |tons triggers the click   |added to the first pagi-  |buttons are displayed.    |
+                          |tons triggers the click   |added to the first pagi-  |buttons are displayed.)   |
                           |event.                    |nation button when the app|                          |
                           |                          |loads.                    |                          |
                           |* The active class is not |                          |                          |
@@ -74,5 +74,3 @@ Code Quality              |*No new comments have been|* Any new comments have   
                           |DevTools console while    |pear in the DevTools con- |                          |
                           |using the pagination app. |sole while using the app. |                          |
 --------------------------|--------------------------|--------------------------|--------------------------|
-
-Blank line space: |                          |

@@ -124,7 +124,7 @@ Final stage of the project is the most important. This is where developer skills
     <button type="button"> <img src ="img/icn-search.svg" alt="Search Icon"></button>
   </label>
 
-  [ ] 2. Add search functionality
+  [X] 2. Add search functionality
   
   When the search is performed, the student data is filtered so that only students whose name includes the search value are shown. The search should be be case-insensitive and work for partial matches. 
 
@@ -133,13 +133,13 @@ Final stage of the project is the most important. This is where developer skills
   ** Pro Tip
     Already created the function to show 9 students. Call that by submitting the searched list as array argument
 
-  [ ] 3. Add Pagination for Search Results
+  [X] 3. Add Pagination for Search Results
 
   Pagination buttons should change based on the number of matches to the search. Clicking a pagination button should display the corresponding matches
 
   ** Pro Tip
     Already created pagination function. Feed that.
 
-  [ ] 4. Handle No Search matches
+  [X] 4. Handle No Search matches
 
   If no matches are found, display a "No Results Found..." type message on the page. ***DON'T*** use alert()

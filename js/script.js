@@ -119,26 +119,32 @@ const searchButton = document.querySelector('button')
 
 //helper function to filter data via search
 const filterStudents = (searchText, list) => {
+  //change search text to lower case to better compare
   const lowerCaseText = searchText.toLowerCase()
+  //set results to empty array
   const results = []
 
+  //loop through list while changing student's name to lower case for comparison to search text
   for (let i = 0; i < list.length; i++) {
     const student = list[i]
     const fullName = `${student.name.first} ${student.name.last}`.toLowerCase()
 
+    //only add data to results if search data is included in full name
     if (fullName.includes(lowerCaseText)) {
       results.push(student)
     }
   }
 
-  console.log(results)
   return results
 }
 
 //helper function to perform search on keyup or search click
 const performSearch = () => {
+  //find searchInput
   const searchText = searchInput.value
+  //compare students to searchText
   const results = filterStudents(searchText, data)
+  //find student list to change innerHTML on no results
   const studentList = document.querySelector('ul.student-list')
 
   if (results.length > 0) {
