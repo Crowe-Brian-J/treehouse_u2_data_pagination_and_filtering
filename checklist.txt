@@ -1,0 +1,78 @@
+How I'll Be Graded:
+                          |  Needs Work              |  Meets Expectations      |  Exceeds Expectations    |
+--------------------------|--------------------------|--------------------------|--------------------------|
+External Vanilla JS       |Needs work if any of the  |Meets expectations if all |Exceeds expectations if   |
+                          |following are true:       |of the following are true:|meets expectations plus   |
+                          |                          |                          |the following are true:   |
+--------------------------|--------------------------|--------------------------|--------------------------|
+                          |* Project uses jQuery or  |* Project doesn't use     |                          |
+                          |some other library, plug- |jQuery or some other      |* Uses JS to append HTML  |
+                          |in, or borrowed code      |library, plugin, or       |for a search bar.         |
+                          |snippet.                  |borrowed code snippet.    |                          |
+                          |                          |                          |* Search bar matches lay- |
+                          |* Any JS is added directly|* All JS is linked from   |out in the mockup file:   |
+                          |to the HTML file instead  |external files.           | "examples/example-exceeds|
+                          |of linked from external   |                          |.png" or has custom       |
+                          |files.                    |* All markup for the stu- |styling.                  |
+                          |                          |dent listand pagination   |                          |
+                          |* Any markup for the      |buttons is created dynam- |                          |
+                          |student list and          |ically with JS            |                          |
+                          |pagination buttons is     |                          |                          |
+                          |added directly in the HTML|                          |                          |
+                          |file instead of being     |                          |                          |
+                          |created dynamially with JS|                          |                          |
+--------------------------|--------------------------|--------------------------|--------------------------|
+Pagination buttons        |* Incorrect number or num-|* Pagination buttons dis- |* Number of pages and     |
+                          |bering of pagination but- |play the correct page.    |pagination buttons change |
+                          |tons.                     |                          |based on how many search  |
+                          |                          |* Clicking between or out-|results are returned. (ex.|
+                          |* Pagination buttons don't|side of pagination buttons|if 9 or fewer results are |
+                          |show the correct page.    |does not trigger the click|returned, 0 or 1 pagina-  |
+                          |                          |event.                    |tion buttons are displayed|
+                          |* Clicking between or     |                          |; if 22 search results are|
+                          |outside of pagination but-|* The active class is     |returned, 3 pagination    |
+                          |tons triggers the click   |added to the first pagi-  |buttons are displayed.    |
+                          |event.                    |nation button when the app|                          |
+                          |                          |loads.                    |                          |
+                          |* The active class is not |                          |                          |
+                          |added to the first pagi-  |* The active class name is|                          |
+                          |nation buttons when the   |added to the most recently|                          |
+                          |application loads.        |clicked pagination button,|                          |
+                          |                          |and is never present on   |                          |
+                          |* The active class name is|more than 1 button at any |                          |
+                          |not added to the most     |given time.               |                          |
+                          |recently clicked pagina-  |                          |                          |
+                          |tion button, or is present|* Project has correct num-|                          |
+                          |on more than one button at|ber of pagination buttons |                          |
+                          |any given time.           |and they are numbered cor-|                          |
+                          |                          |rectly. (ex. If 42 stu-   |                          |
+                          |                          |dents, should be 5 pagi-  |                          |
+                          |                          |nation buttons, 1-5)      |                          |
+--------------------------|--------------------------|--------------------------|--------------------------|
+Paging                    |* The first 9 students    |* The first 9 students    |* When a search yields 0  |
+                          |from the array of objects |from the array of objects |results, a "No results"   |
+                          |in the js/data.js file are|are displayed when the    |message is displayed on   |
+                          |not displayed when the    |page first loads.         |the page and is removed or|
+                          |page first loads.         |                          |hidden when students are  |
+                          |                          |* Clicking on a pagination|displayed on the page     |
+                          |* Clicked pagination but- |button displays the cor-  |again.                    |
+                          |tons fail to display the  |rect number of students.  |                          |
+                          |correct students or the   |(ex. clicking on the 1    |* After a search, pages   |
+                          |correct number of stu..   |button shows students 1-9 |only display students that|
+                          |                          |clicking the 2 shows stu- |match the search criteria |
+                          |                          |dents 10-18, etc.)        |and pages display the cor-|
+                          |                          |                          |rect number of students.  |
+                          |                          |                          |(ex. if 22 search results |
+                          |                          |                          |are returned, the 3rd and |
+                          |                          |                          |final page should only    |
+                          |                          |                          |display 4 students.).     |
+--------------------------|--------------------------|--------------------------|--------------------------|
+Code Quality              |*No new comments have been|* Any new comments have   |                          |
+                          |added to js/script.js file|been added the file.      |                          |
+                          |                          |                          |                          |
+                          |*Uncaught errors appear in|* No uncaught errors ap-  |                          |
+                          |DevTools console while    |pear in the DevTools con- |                          |
+                          |using the pagination app. |sole while using the app. |                          |
+--------------------------|--------------------------|--------------------------|--------------------------|
+
+Blank line space: |                          |
