@@ -139,12 +139,14 @@ const filterStudents = (searchText, list) => {
 const performSearch = () => {
   const searchText = searchInput.value
   const results = filterStudents(searchText, data)
+  const studentList = document.querySelector('ul.student-list')
 
   if (results.length > 0) {
     showPage(results, 1)
     addPagination(results)
   } else {
-    studentList.innerHTML = `<li><h3>No results found...</h3></li>`
+    //trying to get this to bigger and more prominent took more time than I'd care to admit
+    studentList.innerHTML = `<li><h3 style="text-align: center; color: red; font-size: 1.5em; margin-top: 2em">No results found...</h3></li>`
   }
 }
 
@@ -154,7 +156,7 @@ searchInput.addEventListener('keyup', () => {
 })
 
 //event listener for search button click
-searchButton.addEventListener('submit', () => {
+searchButton.addEventListener('click', () => {
   performSearch()
 })
 
