@@ -82,7 +82,7 @@ const addPagination = (list) => {
     if (buttonClicked) {
       buttonClicked.classList.add('active')
       let newPage = Number(buttonClicked.innerHTML)
-      showPage(data, newPage)
+      showPage(list, newPage)
     }
   })
 }
@@ -131,6 +131,7 @@ const filterStudents = (searchText, list) => {
     }
   }
 
+  console.log(results)
   return results
 }
 
